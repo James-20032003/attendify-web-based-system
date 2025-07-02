@@ -1,0 +1,81 @@
+/* Custom styles for the sidebar */
+.sidebar {
+    height: 100%; /* Full height */
+    width: 0; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa; /* Light background */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 3.5rem; /* Adjust based on header height */
+    transition: 0.5s; /* Smooth transition */
+    z-index: 1050; /* Ensure it's above other content */
+}
+
+.offcanvas-start.show {
+    width: 250px; /* Adjust the width of the sidebar */
+}
+
+.sidebar .user-profile {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.sidebar .profile-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar h4 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sidebar .nav-item .nav-link {
+    padding: 12px 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.sidebar .nav-item .nav-link i {
+    margin-right: 8px;
+}
+
+/* Style for the main content to shift when the sidebar is open */
+main {
+    transition: margin-left .5s;
+    padding-left: 0; /* Initially no left padding */
+}
+
+.offcanvas-start.show ~ main {
+    padding-left: 250px; /* Adjust to match sidebar width */
+}
+
+/* Adjust header styling */
+.navbar {
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) { /* Below lg breakpoint */
+    .d-flex.align-items-center {
+        display: none !important; /* Hide the school name and time on smaller screens */
+    }
+
+    main {
+        padding-left: 0 !important; /* Reset main padding on small screens */
+    }
+}
