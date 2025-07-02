@@ -1,0 +1,40 @@
+# Attendify web-based System
+### Attendify web-based System built with PHP, MySQL, and XAMPP that allows users (admin) to manage users and enroll lecturers, assign roles, view submissions and generate report on lecturer's task progres. |
+(Lecturers) checkin for lectures and take attendence on scheduled intervals, edit profile, view submissions. 
+
+
+
+
+## Features
+Admin
++ Add user: Register new lecturers in the system
++ Manage users: Manage lecture tasks and time slots for individual lecturers.
++ Home: Monitor all lecture submissions and check-ins.
+
+Lecturer
+Capabilities:
++ My Task: Check-in for lectures (location and time dependent)
++ Profile: Update profile information (full name, username, password)
++ My Records: View personal attendance history and records
+
+
+## Requirements
+
++ XAMPP (PHP, MySQL, Apache)
++ PHP 
++ MySQL 
+
+## Login Credentials:
+
+### Default Admin User:
+
++ Username: admin
++ Password: 123
+### Default Lecturer User:
+
++ Username: kasoma 
++ Password: 1234567890
+
+
+
+This project is verified by Uganda Insititute Of ICT, Nakawa-Uganda
